@@ -2,9 +2,9 @@ def data_write(data_write):
     with open('./mylist','w') as file:
         file.write(data_write)
 
-def equal_search(target_data,target_element):
+def equal_search(file_path,target_data,target_element):
 
-    with open('./my_list.txt', 'r') as file:
+    with open(file_path, 'r') as file:
         data_read = file.readlines()
         print(data_read)
         data_list2 = []
